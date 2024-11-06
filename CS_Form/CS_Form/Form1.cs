@@ -19,14 +19,17 @@ namespace CS_Form
         {
             InitializeComponent();
 
+            string[] q = new string[10] {"a","b","c","d","e","f","g","h","i","j"};
+                        
 
             for (int i = 0; i < 10; i++)
             {
-                TestButton TestButton = new TestButton(this,i,(i%3)*100, (i/3)*100,100,100);
+                TestButton TestButton = new TestButton(this, q[i],(i%3)*100, (i/3)*100,100,100);
                 Controls.Add(TestButton);
+                
             }
-
-            _testLabel = new TestLabel("ラベル",100, 300, 100, 500);
+            
+            _testLabel = new TestLabel("ラベル表示",100, 300, 100, 500);
             Controls.Add(_testLabel);
 
 

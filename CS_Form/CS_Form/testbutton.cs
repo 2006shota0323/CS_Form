@@ -13,17 +13,17 @@ namespace CS_Form
         Form1 _form1;
 
 
-        public TestButton(Form1 form1,int id,int x, int y, int width, int height)
+        public TestButton(Form1 form1,string id ,int x, int y, int width, int height)
         {
             _form1 = form1;
-
+            
 
             //ClickイベントにOnClick関数を登録
             //ボタンをクリックした時に登録した関数を実行します
             Click += OnClick;
 
             //ボタン内に文字を表示させる
-            Text = id.ToString();
+            Text = id;
 
             //ボタンの生成場所の指定
             Location = new Point(x,y);
