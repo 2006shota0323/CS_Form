@@ -26,7 +26,8 @@ namespace CS_Form
             InitializeComponent();
 
             string[] q = new string[10] {"a","b","c","d","e","f","g","h","i","j"};
-             
+
+
             
 
             for (int i = 0; i < 10; i++)
@@ -64,6 +65,16 @@ namespace CS_Form
         {
             _testLabel.TextUpdate(str);
         }
+
+        public string ButtonLabelReplacement(string str)
+        {
+         string s= textBox.TextReplacement(str);
+
+            return s;
+        }
+
+
+
         
     }
     

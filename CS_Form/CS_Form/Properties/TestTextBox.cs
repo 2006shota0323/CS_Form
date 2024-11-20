@@ -23,6 +23,22 @@ namespace CS_Form.Properties
             //ボタンの大きさを指定
             Size = new Size(width, height);
         }
+
+        public string TextReplacement(string str)
+        {
+            string temp = Text;
+
+            Text = str;
+
+            return temp;
+        }
+
+
+
+
+
+
+
         /// <summary>
         /// ラベルの文字更新関数
         /// </summary>
